@@ -1,0 +1,11 @@
+.titles{
+    text-indent: 50px;
+    background-color: lightblue;
+    direction: rtl;
+
+}
+
+.list-card{
+    border: 1px solid #ccc;
+
+}

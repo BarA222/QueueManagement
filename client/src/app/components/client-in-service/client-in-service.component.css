@@ -1,0 +1,42 @@
+.client-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-indent: 50px;
+
+}
+
+.titles{
+  text-indent: 80px;
+  background-color: lightblue;
+  direction: rtl;
+
+}
+
+.button{
+  border: none;
+  color: lightblue;
+  text-align: center;
+  font-size: 16px;
+  
+}
+
+button:hover{
+  background-color: lightblue;
+}
+
+.left-side {
+  text-indent: 130px;
+  direction: rtl;
+  text-decoration: solid;
+  text-align: center;
+  flex-direction: row;
+  position: absolute;
+  
+}
+
+
+
+

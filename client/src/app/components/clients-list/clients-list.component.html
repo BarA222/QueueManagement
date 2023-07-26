@@ -1,0 +1,16 @@
+<table class="list-card">
+  <thead>
+    <tr class="titles">
+      <th>Number In Line</th>
+      <th>Full Name</th>
+      <th>Checkin Time</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let client of clients">
+      <td>{{ client.numberInLine }}</td>
+      <td>{{ client.fullName }}</td>
+      <td>{{ client.checkinTime | date:'hh:mm:ss' }}</td>
+    </tr>
+  </tbody>
+</table>

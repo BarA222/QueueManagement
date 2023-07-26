@@ -1,0 +1,16 @@
+<form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+  <div class="client-card">
+    <div class="left-side">
+      <label for="clientFullName">Your name?</label>
+      <input type="text" id="clientFullName" formControlName="fullName" />
+      <div *ngIf="clientForm.controls['fullName'].invalid">
+        <small>Please enter your name</small>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <button class="button" type="submit" [disabled]="clientForm.invalid">Create</button>
+    </div>
+  </div>
+
+</form>

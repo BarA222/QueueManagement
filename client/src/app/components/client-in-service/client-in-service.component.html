@@ -1,0 +1,24 @@
+<div class="client-card">
+  <table >
+    <thead>
+      <tr class="titles">
+        <th>Number In Line</th>
+        
+        <th>Full Name</th>
+        <th>Checkin Time</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngIf="client">
+        <td>{{ client.numberInLine }}</td>
+        <td>{{ client.fullName }}</td>
+        <td>{{ client.checkinTime | date:'hh:mm:ss' }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  <div class="button">
+    <button type="submit" (click)="serviceNext()">Next Client</button>
+  </div>
+</div>
+

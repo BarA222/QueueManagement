@@ -1,0 +1,53 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+
+<div class="content" role="main">
+
+  <img class="logo" src='/assets/QueueLogo.png' alt='image'>
+
+  <!-- Highlight Card -->
+  <div class="header">
+
+<!--     
+    <span>{{ title }}</span> -->
+
+  </div>
+  <br>
+  
+  <h1 class="enqueue">Enqueue</h1>
+  <app-add-client-to-line (addToLineEvent)="onAddToLine($event)"></app-add-client-to-line>
+  <br>
+
+
+  <h1 class="inservice">In Service</h1>
+  <app-client-in-service (advanceInLine)="onAdvanceInLine($event)"></app-client-in-service>
+
+  <br>
+
+
+
+  <h1 class="line">Clients In Line</h1>
+  <app-clients-list [clients]="clients"></app-clients-list>
+
+  <br>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <img src='/assets/ThankYou.png' alt='image' style="width:10em; height:11em;">
+
+  </footer>
+
+
+</div>
